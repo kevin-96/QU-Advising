@@ -3,6 +3,7 @@
     padding:0;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 /*BOOSTRAPMADE Logo located at the top*/
 .logo {
     padding-top: 14px;
@@ -35,4 +36,10 @@
 
 li{
     border-radius: 40px;
+}
+
+.jumbotron{
+    background-size: cover;
+    min-height: 1090px;
+
 }

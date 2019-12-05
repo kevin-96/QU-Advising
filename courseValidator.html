@@ -32,43 +32,55 @@
 
 <body>
   <!--Logo-->
-  <div class="logo" style="background-color:#00263E">
-    <img src="images/logo.png" alt="Site Logo" width="auto" height="65" />
-  </div>
+  <nav class="navbar navbar-default" style="background-color:#00263E">
+      <ul class="navbar-nav">
+              <img src="images/logo.png" width="auto" height="36">
+      </ul>
+      <!-- Links -->
+      <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">Logout</a>
+          </li>
+      </ul>
+
+  </nav>
   <!--Contains the header-->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1 class="text-center">Add Classes</h2>
-      </div>
-    </div>
-    <!--Contains a form, that once submitted, will append the added class-->
-    <form>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="form-group">
-            <label for="selectClass"><strong>Select a Class</strong></label>
-            <!--The classes that the student can select from-->
-            <select class="form-control" id="selectClass">
-              <option>SER 210</option>
-              <option>SER 230</option>
-              <option>SER 250</option>
-              <option>SER 310</option>
-              <option>SER 320</option>
-            </select>
-            <!--The button that will perform the addClass function, and will submit the form-->
-            <button class="btn btn-primary mb-2 my-3" type="button" onclick="addClass(this.form)">Add Class</button>
+  <div class="jumbotron">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="text-center">Add Classes</h2>
+            </div>
           </div>
+          <!--Contains a form, that once submitted, will append the added class-->
+          <form>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="selectClass"><strong>Select a Class</strong></label>
+                  <!--The classes that the student can select from-->
+                  <select class="form-control" id="selectClass">
+                    <option>SER 210</option>
+                    <option>SER 230</option>
+                    <option>SER 250</option>
+                    <option>SER 310</option>
+                    <option>SER 320</option>
+                  </select>
+                  <!--The button that will perform the addClass function, and will submit the form-->
+                  <button class="btn btn-primary mb-2 my-3" type="button" onclick="addClass(this.form)">Add Class</button>
+                </div>
+              </div>
+              <!--Where the classes will be added, with the adder-->
+              <div class="col-lg-6">
+                <h2>Added classes</h2>
+                <ul class="nav flex-column" id="addedClasses">
+                  </ul>
+              </div>
+            </div>
+          </form>
         </div>
-        <!--Where the classes will be added, with the adder-->
-        <div class="col-lg-6">
-          <h2>Added classes</h2>
-          <ul class="nav flex-column" id="addedClasses">
-            </ul>
-        </div>
-      </div>
-    </form>
   </div>
+  
 
   <!--The footer-->
   <div class="footer fixed-bottom">

@@ -26,12 +26,12 @@
 
 /*Contains the background image*/
 #home-section {
-    background: url(../images/money-1.jpg);
+    background: url(../images/quad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 1200px;
+    min-height: 1150px;
 }
 
 /*Responsible for making the background image darker*/
@@ -40,14 +40,14 @@
     top: auto;
     left: 0;
     width: 100%;
-    min-height: 1200px;
-    background: rgba(0, 0, 0, 0.7);
+    min-height: 1150px;
+    background: rgba(0, 0, 0, 0.3);
     padding-top: 150px;
 }
 
 .jumbotron {
-    height: 250px;
-    background-color: #00263E);
+    height: 200px;
+    background-color: #00263Edd;
     border-top-color: 15px red;
     border-bottom-color: 15px white;
 }
@@ -69,6 +69,14 @@
     border-width: 2px;
     border-color: black;
     font-size: medium;
+}
+.btn-sm.round{
+    width: 100px;
+    border-radius: 24px;
+    border-width: .25px;
+    border-color: #00263E;
+    font-size: medium;
+    text-align: center;
 }
 
 .dropdown {
@@ -94,4 +102,66 @@
     color: white;
     font-size: 14px;
     text-align: center;
+}
+.container {
+  padding: 2rem 0rem;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 150px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0; 
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
 }

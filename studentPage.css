@@ -1,0 +1,27 @@
+tr:nth-child(6){
+    background-color: rgb(243, 198, 0);
+}
+
+tr:nth-child(5){
+    background-color: rgb(62, 226, 62);
+}
+
+tr:nth-child(3){
+    background-color: rgb(250, 78, 78);
+}
+
+.jumbotron{
+    background: url(images/page.png);
+    background-size: cover;
+    min-height: 1090px;
+}
+
+#table{
+    margin-top: 10%;
+    background-color: aliceblue;
+}
+
+li a:hover{
+    background-color: aliceblue;
+    
+}

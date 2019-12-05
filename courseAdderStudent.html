@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/courseAdderStudentStyle.css">
+    <link rel="stylesheet" href="style.css">
     <title>Class Validator</title>
 
     
@@ -26,56 +27,72 @@
 <body>
     <!--Logo-->
 
-    <div class="logo" style="background-color:#00263E">
-        <img src="images/logo.png" alt="Site Logo" width="auto" height="65" />
-    </div>
+    <nav class="navbar navbar-default" style="background-color:#00263E">
+            <ul class="navbar-nav">
+                    <img src="images/logo.png" width="auto" height="36">
+            </ul>
+            <!-- Links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Logout</a>
+                </li>
+            </ul>
+    
+        </nav>
 
     <!--Contains the header-->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="text-center">Class Validator</h2>
-            </div>
-        </div>
-     <!--Contains the table, with each course-->   
-        <div class="row">
-            <div class="col-lg-8">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Classes Agreed Upon</th>
-                            <th scope="col">Student's Schedule</th>
-                        </tr>
-                    </thead>
-                    <tbody id="table_classes">
-                        <tr>
-                            <td>SER210</td>
-                            <td>SER210</td>
-                        </tr>
-                        <tr>
-                            <td>SER220</td>
-                            <td>SER220</td>
-                        </tr>
-                        <tr>
-                            <td>SER320</td>
-                            <td>SER320</td>
-                        </tr>
-                        <tr>
-                            <td>MU110</td>
-                            <td>MU110</td>
-                        </tr>
-                        <tr>
-                            <td>MA240</td>
-                            <td>MA240</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!--This is for the validation bubble once it is complete-->
-            <div class="col-lg-4" id="validScheduleSec"></div>
-        </div>
+    <div class="jumbotron">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="text-center">Class Validator</h2>
+                        </div>
+                    </div>
+                 <!--Contains the table, with each course-->   
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <table class="table" id="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Classes Agreed Upon</th>
+                                        <th scope="col">Student's Schedule</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table_classes">
+                                    <tr>
+                                        <td>SER210</td>
+                                        <td>SER210</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SER220</td>
+                                        <td>SER220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SER320</td>
+                                        <td>SER320</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MU110</td>
+                                        <td>MU110</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MA240</td>
+                                        <td>MA240</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--This is for the validation bubble once it is complete-->
+                        <div class="col-lg-4" id="validScheduleSec"></div>
+                    </div>
+                </div>
+                <div class="container text-center">
+                        <button onclick="window.history.back()" class="btn btn-small round" style="background-color:aliceblue">Back</button>
+                </div>
+                
+            
     </div>
-
+    
     <!--This is for the footer-->
     <div class="footer fixed-bottom">
         <p>QU - 2019</p>

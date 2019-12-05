@@ -8,14 +8,16 @@
     <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="script.js"></script>
+
     <title>Index Page</title>
 </head>
 <body>
 
     <!--Logo-->
 
-        <div class="logo" style="background-color:#00263E align:">
-            <img src="images/logo.png" alt="Site Logo" width="auto" height="65">
+        <div class="logo" style="background-color:#00263E" align="center">
+            <img src="images/logo.png" alt="Site Logo" width="auto" height="36">
         </div>
     
 
@@ -25,19 +27,19 @@
             <!-- Jumbo -->
             <div class="jumbotron jumbotron-fluid">
                 <div class="jumbo-header-white">
-                    <h1 class="display-4">QU Advising</h1>
+                    <h1 class="display-4">Quinnipiac Advising System</h1>
                 </div>
                 <div class="jumbo-paragraph-white">
-                    <p>body...</p>
+                    <p>Quinnipiac - University - Advising - Registration - System</p>
                 </div>
             </div>
 
             <!-- Button ("Get Started Now") -->
             <div class="text-center">
                 <!-- <button class="btn btn-info" data-toggle="modal" data-target="#contactModal">Get Started Now</button> -->
-                <button onclick="window.location.href = 'file:///Users/kevinsangurima/Desktop/hackathon-fall-2019/debt.html';" type="button"
-                class="btn btn-lg round" href="debt.html" style="padding: 10px 30px 10px 30px; background-color: #00263E;
-                color: white">Login</button>
+                <button type="button"
+                class="btn btn-lg round" data-toggle="modal" data-target="#loginModal" style="padding: 10px 30px 10px 30px; background-color: #00263E;
+                color: white" onclick="document.getElementById('id01').style.display='block'">Login</button>
             </div>
 
         </div>
@@ -47,6 +49,40 @@
         <p>QU - 2019</p>
         <p></p>
     </div>
+
+
+
+<!-- The Modal -->
+<div id="id01" class="modal" style="">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    
+    <div class="container">
+        <label><h2><b>Login</b></h2></label>
+    </div>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="userin" required>
+
+      <label for="psw" style="margin-left: 15px"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="passin" required>
+
+      <button type="submit" onclick="validate()" style="margin-left: 15px" class="btn btn-sm round">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-left: 8px"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#fff">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-sm round">Cancel</button>
+      <span class="psw"><a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
 
 
 </body>
